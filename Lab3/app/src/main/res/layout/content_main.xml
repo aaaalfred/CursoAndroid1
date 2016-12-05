@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RadioGroup android:id="@+id/orientation"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+        <RadioButton android:id="@+id/horizontal"
+            android:text="horizontal"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:checked="true" />
+        <RadioButton android:id="@+id/vertical"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:text="vertical"
+            />
+    </RadioGroup>
+    <RadioGroup android:id="@+id/gravity"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+        <RadioButton android:id="@+id/left"
+            android:text="left"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:checked="true"
+            />
+        <RadioButton android:id="@+id/center"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:text="center"
+            />
+        <!--
+          visibility:visible (0) - Visible en la pantalla, el valor default
+          visibility:invisible (1) - No se despliega, pero se considera en el layout (se deja un espacio para el)
+          visibility:gone(2) - Completamente oculto, como si la vista no fue agregada
+         -->
+        <TextView
+            android:id="@+id/textview"
+            android:text="Porque?"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:visibility="gone"/>
+
+        <RadioButton android:id="@+id/right"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:text="right"
+            />
+    </RadioGroup>
+
+</LinearLayout>
