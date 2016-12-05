@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CONTACT MANAGER</string>
+    <string name="action_settings">Settings</string>
+    <string name="selectedEntry"/>
+    <color name="White">#FFFFFF</color>
+    <color name="Black">#000000</color>
+    <color name="Blue">#0000FF</color>
+    <string name="showStarred">Show starred contacts only</string>
+</resources>
